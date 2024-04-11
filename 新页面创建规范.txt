@@ -1,0 +1,82 @@
+#include "common.h"
+#define p14_button_num 4
+/*————————————————————————
+				【医生登入界面】 
+编写人：徐哲轩
+此界面实现了医生进入系统时需要输入密码的过程。
+————————————————————————*/
+
+
+void p14_screen()
+{
+/*—————————————————
+		【初始化绘图函数】 
+		编写人：徐哲轩
+		函数会画出界面的背景。
+——————————————————*/
+	setcolor(DARKGRAY);
+	setlinestyle(0, 0, 3);
+	line(605,35,635,5);
+	line(0,0,600,0) ;
+	line(0,10,600,10) ;
+	line(0,0,0,480) ;
+	line(10,0,10,480) ;
+	line(0,470,640,470) ;
+	line(0,480,640,480) ;
+	line(630,40,630,480) ;
+	line(640,40,640,480) ;
+//	puthz(160,220,"您好医生，欢迎进入系统！",32,40,RED);
+}
+
+
+
+int p14()
+{
+/*——————————————————
+		【医生登入页面函数】 
+		编写人：徐哲轩
+。
+———————————————————*/
+	int button[p14_button_num] = {1,1,1,1};
+	int page = 0;
+	int page_t = 0;
+	
+	clrmous(MouseX,MouseY);
+	MouseS = 0;
+	cleardevice();
+	setbkcolor(WHITE);
+	p14_screen();
+	delay(300);
+	
+	while(page == 0)
+	{
+		newmouse(&MouseX,&MouseY,&press);
+
+			page_t = CreateButton_OUT(600,0,13,&button[0]);
+			//返回按钮
+			if(page_t)
+			{
+				//数据中转并检测，若按钮函数输出改变的页面跳转量到page_t，则page赋值，并且跳出页面循环，退出页面函数，然后重新选择页面
+				page = page_t;
+				break;
+			}		
+
+
+//——————————————————————————————————————
+
+//			page_t = CreateButton_1("返回",240,300,1,&button[0]);
+//			if(page_t)
+//			{
+//				page = page_t;
+//				break;
+//			}		
+
+//          【 按钮函数的使用规范 】
+
+//				编写人 ：徐哲轩
+//——————————————————————————————————————
+
+	}
+	return page;    
+	//退出页面，返回改变的页面值
+}
