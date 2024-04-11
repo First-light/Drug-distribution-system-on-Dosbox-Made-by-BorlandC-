@@ -70,7 +70,7 @@ void Number_no_same(PatientData* m,int start)//head
 	}while(n != 0);
 	p = m->next;
 	n = start;
-	while(p->next != NULL)
+	while(p != NULL)
 	{
 		if(p->payreg >= 2 &&p->nummed != 0)//将取药号码不为0的患者重新排列
 		{

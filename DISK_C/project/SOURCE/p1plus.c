@@ -34,7 +34,7 @@ void p1_screen(void)
 	setlinestyle(0, 0, 3);
 	line(160,0,160,480);
 	line(480,0,480,480);
-	puthz(20, 40, "号码：", 16, 16, DARKGRAY);
+	puthz(20, 40, "您的序号：", 16, 16, DARKGRAY);
 	rectangle(20,100,140,160);
 	puthz(30, 115, "我要取药", 24, 24, DARKGRAY);
 	rectangle(20,220,140,280);

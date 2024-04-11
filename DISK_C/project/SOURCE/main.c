@@ -76,7 +76,6 @@ void main(void)
 				break;
 			case 16:
 				//医生模拟叫号页面
-				page = load();
 				page = p16();
 				break;					
 			case 23:
