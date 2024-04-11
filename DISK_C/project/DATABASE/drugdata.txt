@@ -2,14 +2,14 @@
 2	2	Amoxicilin	15	985	200
 3	3	Aspirin	30	984	200
 4	4	Ibuprofen	23	997	200
-5	5	Paracetamol	8	977	200
+5	5	Paracetamol	8	969	200
 6	6	LianHuaQingWen	14	997	200
-7	7	Tebutaline	5	977	200
+7	7	Tebutaline	5	971	200
 8	8	Salbutamol	17	992	200
 9	9	Theophylline	9	989	200
 10	10	Nitroglycerin	7	997	200
 11	11	Atorvastatin	5	997	200
-12	12	BandAid	10	981	200
+12	12	BandAid	10	975	200
 13	13	Iodophor	10	999	200
 14	14	Oxydol	6	999	200
 15	15	Roxithromycin	17	999	200
